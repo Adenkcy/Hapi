@@ -1,0 +1,17 @@
+{
+  "name": "hapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "start": "node server/Index.js",
+    "serve": "nodemon server/index.js",
+    "client": "npm run dev  --prefix vue",
+    "dev":"concurrently \"npm run serve\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
